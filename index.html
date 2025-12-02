@@ -6,52 +6,62 @@
   <title>Aaryan Samanta – Class of 2028</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0; background:#f8f9fa; color:#222; line-height:1.6; }
-    .container { max-width:900px; margin:40px auto; background:#fff; box-shadow:0 10px 30px rgba(0,0,0,0.1); overflow:hidden; border-radius:12px; }
-    header { background:linear-gradient(135deg, #0d47a1, #1976d2); color:white; padding:40px 30px; text-align:center; }
-    header h1 { margin:0; font-size:2.8em; font-weight:300; }
-    header .contacts { margin-top:15px; font-size:1.1em; }
-    header a { color:white; text-decoration:none; margin:0 12px; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0; background:#fdfdfd; color:#222; line-height:1.7; }
+    .container { max-width:900px; margin:40px auto; background:#fff; box-shadow:0 8px 30px rgba(0,0,0,0.08); overflow:hidden; border-radius:10px; }
+    header { padding:50px 30px; text-align:center; background:#fff; border-bottom:3px solid #0d47a1; }
+    header h1 { margin:0; font-size:2.9em; font-weight:400; color:#0d47a1; }
+    header .contacts { margin-top:18px; font-size:1.15em; color:#444; }
+    header a { color:#0d47a1; text-decoration:none; }
     header a:hover { text-decoration:underline; }
-    section { padding:35px 50px; border-bottom:1px solid #eee; }
-    section:last-child { border-bottom:none; }
-    h2 { color:#0d47a1; border-bottom:3px solid #bbdefb; padding-bottom:8px; font-size:1.6em; margin-top:0; }
-    ul { padding-left:20px; margin:15px 0; }
-    li { margin-bottom:12px; }
+    section { padding:38px 55px; }
+    h2 { color:#0d47a1; font-size:1.65em; margin-top:0; margin-bottom:18px; border-bottom:2px solid #bbdefb; padding-bottom:8px; }
+    ul { padding-left:22px; margin:16px 0; }
+    li { margin-bottom:13px; }
     li strong { color:#0d47a1; }
-    .summary { background:#e3f2fd; padding:25px; border-left:6px solid #1976d2; margin:20px 0; font-size:1.05em; border-radius:8px; }
-    .summary li { margin-bottom:14px; }
+    .summary { background:#f5fbff; padding:28px; border-left:6px solid #0d47a1; margin:25px 0; font-size:1.06em; border-radius:8px; }
+    .summary li { margin-bottom:16px; }
 
-    .resume-combined {
+    /* Resume images */
+    .resume-page {
       width: 100%;
       max-width: 820px;
       height: auto;
       display: block;
       margin: 35px auto;
-      border: 1px solid #ddd;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-      border-radius: 10px;
-      cursor: pointer;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+      border-radius: 8px;
       transition: transform 0.25s ease;
     }
-    .resume-combined:hover { transform: scale(1.015); }
+    .resume-page:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.18); }
 
-    .resume-note {
+    .download-btn {
       text-align: center;
-      color: #444;
-      font-size: 1.05em;
-      margin: 20px 0;
-      font-weight: 500;
+      margin: 50px 0 20px;
     }
-    .resume-note a { color: #0d47a1; text-decoration: none; font-weight: 700; }
-    .resume-note a:hover { text-decoration: underline; }
+    .download-btn a {
+      background: #0d47a1;
+      color: white;
+      padding: 14px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.15em;
+      box-shadow: 0 6px 20px rgba(13,71,161,0.3);
+      transition: all 0.2s;
+    }
+    .download-btn a:hover { background:#1565c0; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(13,71,161,0.4); }
 
-    footer { text-align:center; padding:22px; background:#0d47a1; color:white; font-size:0.9em; border-bottom-left-radius:12px; border-bottom-right-radius:12px; }
-    @media (max-width:768px) { 
-      header h1 { font-size:2.2em; } 
-      section { padding:25px 30px; } 
-      .container { margin:12px; }
-      .resume-combined { max-width: 100%; }
+    footer { text-align:center; padding:25px; background:#0d47a1; color:white; font-size:0.95em; border-bottom-left-radius:10px; border-bottom-right-radius:10px; }
+    footer a { color:white; text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
+
+    @media (max-width:768px) {
+      header h1 { font-size:2.3em; }
+      header { padding:40px 20px; }
+      section { padding:30px 25px; }
+      .container { margin:15px; border-radius:8px; }
+      .resume-page { max-width:100%; }
     }
   </style>
 </head>
@@ -66,7 +76,6 @@
     </div>
   </header>
 
-  <!-- All your existing sections (Summary, Education, Research, etc.) – unchanged -->
   <section>
     <h2>Summary</h2>
     <div class="summary">
@@ -82,42 +91,46 @@
 
   <section><h2>Areas of Interest</h2><ul><li>Artificial Intelligence • Machine Learning • Graph Neural Networks • Ethical AI</li><li>Quantum Computing • Competitive Algorithms • Bioinformatics • Healthcare AI</li></ul></section>
   <section><h2>Education</h2><ul><li><strong>Legend College Preparatory</strong>, Cupertino, CA — 10th Grade, Class of 2028</li><li>GPA: <strong>4.67 Weighted, 4.0 Unweighted</strong></li><li>APs: 3 completed (all 5s), total 25 planned by graduation</li><li>SAT: <strong>1570</strong> (800 Math)</li></ul></section>
-  <section><h2>Research & Publications</h2><ul><li><strong>Lead Author</strong>, AIAM 2025 International Conference Publication, Nov’25 — Quantum-Inspired Hybrid Genetic Algorithm and Graph Neural Network Ensemble for Multimodal Classification; peer-reviewed proceedings.</li><li><strong>UCSB Summer Research Academy Scholar</strong>, Jul’25 — Youngest accepted (top ~10% rate); capstone <em>Resetting the Clocks: Mitochondrial Quality Control via Genetic Adaptation</em>; submitting to IJHSR.</li><li>AI Research Intern, Legend College Prep AI Lab, Jun’25 — Built CNN for pneumonia detection from chest X-rays (>90% accuracy).</li><li>Research Scholar, Legend College Prep AI Lab, Sep’25 — Disease-Symptom Demographic EDA.</li></ul></section>
-  <section><h2>Awards & Honors</h2><ul><li>Lead Author, AIAM 2025, Peer-Reviewed Proceedings</li><li>USACO 2025 US Open Dual Perfect Scores (Gold & Silver, 1000/1000)</li><li>AMC 10 & 12 National 1st Place Perfect Scores (150/150)</li><li>UCSB Summer Research Academy Scholar — Youngest accepted</li><li>NSHSS National Scholar</li></ul></section>
-  <section><h2>Leadership & Global Impact</h2><ul><li>Founder/President, <strong>AI Ethos, Inc. (501(c)(3))</strong> • Directed ethical AI workshops for 75+ students across 3 countries</li><li>Founder/President, <strong>NextGenAI International</strong></li><li>Founder/Chief, <strong>Global AI Ambassador</strong></li><li>Co-Captain, Cupertino Junior Olympiad Math/CS Team</li><li>Volunteer Team Leader, VA Palo Alto Health Care</li></ul></section>
-  <section><h2>Additional Distinctions</h2><ul><li>Track & Field JV Anchor, MVHS Matadors: Set 9th grade records (100m: 11.75s)</li><li>Percussion Section Leader, MVHS Concert Band: Perfect Score, CMEA Festival</li></ul></section>
+  <section><h2>Research & Publications</h2><ul><li><strong>Lead Author</strong>, AIAM 2025 International Conference Publication, Nov’25 — Quantum-Inspired Hybrid Genetic Algorithm and Graph Neural Network Ensemble for Multimodal Classification; peer-reviewed proceedings.</li><li><strong>UCSB Summer Research Academy Scholar</strong>, Jul’25 — Youngest accepted (top ~10% rate); capstone <em>Resetting the Clocks: Mitochondrial Quality Control via Genetic Adaptation</em>.</li><li>AI Research Intern, Legend College Prep AI Lab — Built CNN for pneumonia detection (>90% accuracy).</li><li>Research Scholar, Legend College Prep AI Lab — Disease-Symptom Demographic EDA.</li></ul></section>
+  <section><h2>Awards & Honors</h2><ul><li>Lead Author, AIAM 2025 Peer-Reviewed Proceedings</li><li>USACO 2025 US Open Dual Perfect Scores (Gold & Silver)</li><li>AMC 10 & 12 National 1st Place Perfect Scores</li><li>UCSB Summer Research Academy Scholar — Youngest accepted</li><li>NSHSS National Scholar</li></ul></section>
+  <section><h2>Leadership & Global Impact</h2><ul><li>Founder/President, <strong>AI Ethos, Inc. (501(c)(3))</strong> • Ethical AI education across 3 countries</li><li>Founder/President, <strong>NextGenAI International</strong></li><li>Founder/Chief, <strong>Global AI Ambassador</strong></li><li>Co-Captain, Cupertino Junior Olympiad Math/CS Team</li><li>Volunteer Team Leader, VA Palo Alto Health Care</li></ul></section>
+  <section><h2>Additional Distinctions</h2><ul><li>Track & Field JV Anchor — Set 9th grade school records (100m: 11.75s)</li><li>Percussion Section Leader — Perfect Score, CMEA Festival</li></ul></section>
   <section><h2>Technical Proficiency</h2><ul><li><strong>Languages:</strong> Python (PyTorch, TensorFlow, NumPy, Pandas, scikit-learn), Java, JavaScript</li><li><strong>Domains:</strong> Graph Neural Networks, Genetic Algorithms, CNNs, Bioinformatics, Ethical AI</li><li><strong>Tools:</strong> MATLAB, Git, LaTeX, Linux</li></ul></section>
-  <section><h2>References</h2><ul><li>Dr. Tian Yishuai — <a href="mailto:yishuai-tian@smail.nju.edu.cn">yishuai-tian@smail.nju.edu.cn</a></li><li>Laurence Dang — <a href="mailto:laurencedang@legendcp.com">laurencedang@legendcp.com</a></li><li>Carlos Febrero — <a href="mailto:carlosfebrero@legendcp.com">carlosfebrero@legendcp.com</a></li></ul></section>
+  <section><h2>References</h2>
+    <ul>
+      <li><strong>Dr. Tian Yishuai</strong> — Postdoctoral Fellow, Tsinghua University & Research Element, Nanjing University<br>
+          <a href="mailto:yishuai-tian@smail.nju.edu.cn">yishuai-tian@smail.nju.edu.cn</a></li>
+      <li><strong>Laurence Dang</strong> — Dean of Academics & Chair of Mathematics and Sciences, Legend College Preparatory<br>
+          <a href="mailto:laurencedang@legendcp.com">laurencedang@legendcp.com</a></li>
+      <li><strong>Carlos Febrero</strong> — AI Expert & Computer Science Instructor, Legend College Preparatory<br>
+          <a href="mailto:carlosfebrero@legendcp.com">carlosfebrero@legendcp.com</a></li>
+    </ul>
+  </section>
   <section><h2>World Language Proficiency</h2><ul><li>Spanish: AP Spanish Level</li><li>Bengali: Beginner Level</li></ul></section>
 
-  <!-- ONE PNG (2 pages) + ONE PDF (2 pages) -->
+  <!-- TWO PNGs + ONE PDF -->
   <section>
     <h2>Full Resume</h2>
-    <p style="text-align:center; color:#444; font-size:1.05em; margin-bottom:25px;">
-      Click anywhere on the preview below to open/download the full 2-page PDF
+    <p style="text-align:center; color:#555; font-size:1.05em; margin-bottom:30px;">
+      Click any page to open the full high-resolution 2-page PDF
     </p>
 
-    <img src="resume-both-pages.png" 
-         alt="Resume – Page 1 (top) + Page 2 (bottom)" 
-         class="resume-combined" 
-         usemap="#resume-map">
+    <a href="aaryan-samanta-resume.pdf" target="_blank">
+      <img src="resume-page1.png" alt="Resume Page 1" class="resume-page">
+    </a>
+    <a href="aaryan-samanta-resume.pdf" target="_blank">
+      <img src="resume-page2.png" alt="Resume Page 2" class="resume-page">
+    </a>
 
-    <map name="resume-map">
-      <!-- Entire image is clickable – opens the single 2-page PDF -->
-      <area shape="rect" coords="0,0,3000,6000" 
-            href="aaryan-samanta-resume.pdf" 
-            target="_blank" 
-            alt="Download full 2-page resume (PDF)" 
-            title="Open full resume (PDF)">
-    </map>
-
-    <p class="resume-note">
-      Direct download → <a href="aaryan-samanta-resume.pdf" target="_blank">aaryan-samanta-resume.pdf</a>
-    </p>
+    <div class="download-btn">
+      <a href="aaryan-samanta-resume.pdf" target="_blank">
+        Download Resume (PDF)
+      </a>
+    </div>
   </section>
 
   <footer>
-    © 2025 Aaryan Samanta • <a href="https://github.com/aaryansamanta" style="color:white;">github.com/aaryansamanta</a>
+    © 2025 Aaryan Samanta • <a href="https://github.com/aaryansamanta">github.com/aaryansamanta</a>
   </footer>
 </div>
 </body>
