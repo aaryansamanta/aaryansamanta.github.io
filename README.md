@@ -1,7 +1,5 @@
 # aaryansamanta.github.io
 
-[![Check site](https://github.com/aaryansamanta/aaryansamanta.github.io/actions/workflows/check.yml/badge.svg)](https://github.com/aaryansamanta/aaryansamanta.github.io/actions/workflows/check.yml)
-
 Personal site of **Aaryan Samanta**: research, competitions, and the organizations I run.
 Live at **https://aaryansamanta.github.io/**
 
