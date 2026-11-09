@@ -9,6 +9,9 @@
 *{box-sizing:border-box}
 body{margin:0;background:linear-gradient(135deg,#f5faff 0%,#dceeff 100%);color:var(--ink);font-family:Verdana,Geneva,sans-serif;min-height:100vh;display:grid;place-items:center;padding:28px}
 .wrap{width:min(1050px,100%)}
+.topline{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.github-link{margin-left:auto;white-space:nowrap;display:inline-flex;align-items:center;gap:6px;padding:9px 13px;border:1px solid #b5d8f7;border-radius:999px;background:#fff;color:#175c9e;text-decoration:none;font-size:12px;font-weight:700;box-shadow:0 2px 8px #174a7b12}
+.github-link:hover,.github-link:focus-visible{background:var(--accent-light);border-color:var(--accent);text-decoration:underline}
 .eyebrow{display:inline-block;background:var(--accent-light);color:#175c9e;border:1px solid #b5d8f7;border-radius:999px;padding:9px 15px;font-size:11px;font-weight:bold;letter-spacing:1.1px;text-transform:uppercase}
 h1{font-size:clamp(25px,3.6vw,43px);margin:19px 0 10px;line-height:1.2;letter-spacing:-.7px}
 p{color:var(--muted);font-size:14px;margin:0 0 24px;line-height:1.7}
@@ -19,7 +22,7 @@ video{width:100%;display:block;aspect-ratio:16/9;background:#000}
 </head>
 <body>
 <main class="wrap">
-<div class="eyebrow">Legend College Preparatory · Machine Learning Honors</div>
+<div class="topline"><div class="eyebrow">Legend College Preparatory · Machine Learning Honors</div><a class="github-link" href="https://github.com/aaryansamanta/advanced-ai-curriculum/tree/main/machine_learning_honors" target="_blank" rel="noopener noreferrer" aria-label="View Machine Learning Honors source code on GitHub">View GitHub Code ↗</a></div>
 <h1>Diabetes Prediction with Machine Learning</h1>
 <p>Capstone project · Video demonstration</p>
 <div class="player"><video controls playsinline preload="metadata" aria-label="Diabetes prediction machine learning honors capstone video"><source src="Capstone_Project_Diabetes_Prediction_with_Machine_Learning%20720p.mp4" type="video/mp4">Your browser does not support HTML5 video playback.</video></div>
