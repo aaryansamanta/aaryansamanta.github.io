@@ -1,27 +1,22 @@
----
-title: Biohub Cell Tracking Algorithm Lab
-emoji: 🧬
-colorFrom: blue
-colorTo: green
-sdk: static
-pinned: false
-short_description: Interactive cell tracking and trajectory analysis.
----
+# Biohub - Cell Tracking During Development — interactive demo
 
-# Biohub Cell Tracking Algorithm Lab
+Static GitHub Pages experiment demonstrating the **centroid association** stage of the nearest-neighbor baseline notebook.
 
-This browser demo implements the **centroid matching/linking stage** of the uploaded `Biohub-Silver-cell-tracking-getting-started-w-nearest-neighbor(1).ipynb` notebook. It uses 3D physical distances (Z/Y/X scale `[1.625, 0.40625, 0.40625]` µm/voxel), globally minimum-cost one-to-one Hungarian assignment, and a 15 µm default link cutoff.
+## Run
 
-## What is and is not implemented
+Open `index.html` in a browser, or publish the repository root through GitHub Pages (Settings → Pages → Deploy from branch → main / root). No build step or server is required.
 
-- **Implemented:** Per-frame centroid association, 3D physical-distance calculation, global assignment, distance gating, trajectories, node/edge CSV exports, synthetic detections, and CSV import.
-- **Not implemented:** Original notebook's Zarr/Blosc2 image reading, 3D uniform filtering, 90th-percentile threshold, connected-component segmentation, or the separate CUDA-dependent geometric-fusion model.
-- **Data:** Synthetic detections unless the user supplies a centroid CSV. This is not a reproduction of Kaggle competition results.
+## Inputs and implementation
 
-## Deploy
+- Import a centroid CSV with `frame,z,y,x` (or `t,z,y,x`) voxel coordinates, or generate deterministic synthetic centroid detections.
+- The physical voxel scales are `Z=1.625`, `Y=0.40625`, `X=0.40625` µm/voxel.
+- Consecutive frames are associated with minimum-cost one-to-one Hungarian assignment and a default 15 µm link-distance gate.
+- Inspect XY trajectories and assigned links; export node and edge CSV files.
 
-Create a Hugging Face **Static** Space, then upload `index.html` and this `README.md` to the root. No dependencies or build process required.
+## Scope and scientific limitations
 
-## Attribution
+This is a browser implementation of the **association step**, not a full execution of the competition submission. The baseline notebook additionally reads Zarr/Blosc microscopy volumes, downsamples by 4, applies a 3×3×3 uniform filter, thresholds at the 90th percentile, labels connected components, and calculates centroids. Those image-processing steps are not included. Nor does this demo run geometric-fusion/CUDA inference, detect cell division, or reproduce the Kaggle leaderboard evaluation. Synthetic input is demonstration data, not a competition result.
 
-The underlying algorithmic steps were derived from the user-uploaded nearest-neighbor baseline notebook. Verify original authorship and third-party attribution before representing this demo as independent work in any application.
+The competition submission schema contains `dataset,row_type,node_id,t,z,y,x,source_id,target_id` plus a consecutive `id` index; the browser exports are inspection tables rather than a validated official competition submission.
+
+Competition: Biohub - Cell Tracking During Development (2026).

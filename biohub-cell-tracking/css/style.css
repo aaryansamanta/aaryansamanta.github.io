@@ -1,0 +1,23 @@
+:root{font-family:Inter,system-ui,Arial;color:#e9f2ff;background:#091421}*{box-sizing:border-box}body{margin:0}header{padding:26px max(24px,calc((100vw - 1250px)/2));border-bottom:1px solid #263b50;background:#101e2d}h1{margin:5px 0;font-size:30px}h2{font-size:18px;margin:0 0 14px}.sub{color:#9eb3c7;font-size:14px;line-height:1.6}.tag{font-size:11px;letter-spacing:2px;color:#64d4b2;text-transform:uppercase}.wrap{max-width:1250px;margin:26px auto;padding:0 22px;display:grid;grid-template-columns:300px 1fr;gap:18px}.panel{background:#112336;border:1px solid #294058;border-radius:14px;padding:20px}.controls{display:grid;gap:15px}label{display:block;color:#bed0e1;font-size:13px;margin-bottom:7px}input[type=range]{width:100%;accent-color:#5de0c2}input[type=file],select{width:100%;color:#c9d9e8}button{background:#43cfaa;color:#061a20;border:0;padding:11px 14px;border-radius:8px;font-weight:750;cursor:pointer}button.secondary{background:#263d51;color:#f1f7ff}button:hover{filter:brightness(1.1)}.buttons{display:flex;flex-wrap:wrap;gap:8px}.value{float:right;color:#5de0c2;font-variant-numeric:tabular-nums}.stage{position:relative}canvas{display:block;width:100%;height:auto;background:#06111e;border:1px solid #243e56;border-radius:10px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}.metric{padding:12px;border:1px solid #2c4357;border-radius:9px;background:#0a1a2a}.metric strong{display:block;font-size:23px}.metric span{font-size:12px;color:#9db5c9}.note{border-left:3px solid #f1c76b;background:#2b2a26;padding:12px 15px;border-radius:4px;font-size:13px;line-height:1.6;color:#e8dfc9}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.foot{grid-column:1/-1}.small{font-size:12px;color:#9eb3c7}code{color:#a6f4d9}.legend{display:flex;gap:18px;flex-wrap:wrap;margin:10px 0;color:#aabdd1;font-size:12px}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}.tablebox{max-height:240px;overflow:auto}table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;border-bottom:1px solid #294158;padding:7px}th{color:#91aabd}details{margin-top:12px}summary{cursor:pointer}@media(max-width:850px){.wrap{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}} 
+/* Compact reference-matched presentation: no header/navigation or oversized hero. */
+:root{font-family:Verdana,Geneva,sans-serif;color:#e9f2ff;background:#091421}
+body{margin:0}
+.intro{padding:13px 22px 4px;border:0;background:transparent}
+.intro-inner{max-width:1250px;margin:0 auto}
+.intro .eyebrow{font-size:10px;letter-spacing:2px;font-weight:700;color:#64d4b2;margin:0 0 7px}
+.intro h1{font-size:clamp(22px,2.8vw,32px);line-height:1.2;letter-spacing:-.8px;margin:0 0 5px;font-weight:750}
+.intro .intro-sub{font-size:12px;color:#9eb3c7;line-height:1.5;margin:0}
+.wrap{margin:12px auto 24px}
+.panel{box-shadow:0 8px 30px rgba(0,0,0,.09)}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid #64d4b2;outline-offset:3px}
+@media(max-width:850px){.intro{padding:12px 20px 3px}.wrap{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Competition-aligned, compact experiment introduction */
+.intro{padding:10px 22px 0;background:transparent;border:0}
+.intro-inner{max-width:1250px;margin:0 auto}
+.intro .eyebrow{font-size:10px;letter-spacing:1.9px;margin:0 0 6px}
+.intro h1{font-size:clamp(23px,2.65vw,33px);line-height:1.22;margin:0 0 6px;letter-spacing:-.6px}
+.intro .intro-sub{font-size:12px;margin:0;line-height:1.5}
+.wrap{margin-top:13px}
+@media(max-width:850px){.intro{padding:10px 20px 0}.wrap{margin-top:10px}}
