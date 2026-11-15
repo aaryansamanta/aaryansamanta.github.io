@@ -27,6 +27,39 @@
 
 ---
 
+## Interactive research demonstrations
+
+**[Open the interactive project directory](explore.html)** — a single starting point for the project demonstrations. Each project has its own page, technical context and supporting material. The pages use browser-side visualizations and should not be interpreted as live inference unless a project explicitly implements that behavior.
+
+The project pages are deliberately different: they reflect different research questions and prototypes rather than imposing a single generic dashboard. The shared navigation makes it easy to return to the portfolio or compare projects without changing their core experiments.
+
+### Selected demos
+
+- **[Chest X-Ray CNN Lab](ai-internship-honors/index.html)** — Explore the image-classification workflow and inspect the supporting internship reports.
+- **[Biohub Cell Tracking](biohub-cell-tracking/index.html)** — Investigate cell association and tracking decisions through an interactive visualization.
+- **[Healthcare Data Explorer](data-science-honors/index.html)** — Examine a data-science workflow and its associated project report.
+- **[QIHGA–GNN Research Explorer](ieee-aiam/index.html)** — Explore feature selection, graph propagation, fusion and the paper-reported evaluation.
+- **[Mitochondrial Resilience Atlas](ijhsr-uscb-sra/index.html)** — Explore the biological research question alongside the source notebook and seminar materials.
+- **[Kaggriculture Strategy Explorer](kaggriculture/index.html)** — Examine the market-preemption experiment and its strategic trade-offs.
+- **[Diabetes Prediction](machine-learning-honors/index.html)** — Review the model-building capstone, notebook and recorded walkthrough.
+- **[Pokémon TCG AI Agent](pokemon-tcg-ai-battle/index.html)** — Explore the decision-making interface and supporting agent logic.
+- **[RNA 3D Folding Explorer](stanford-rna-3d-folding-2/index.html)** — Explore the template-alignment ideas behind the competition project.
+- **[Pelvic Floor Motion Lab](stanford-urology/index.html)** — Interact with the kinematic ideas behind the research visualization.
+- **[InfernoTactics Wildfire Simulation](ucla-cosmos-c1/index.html)** — Explore a wildfire-response planning and simulation project.
+
+### How to review
+
+1. Start with the project question and the accompanying write-up.
+2. Use the demo to inspect an algorithmic idea, data flow, or simulation.
+3. Consult the linked notebook, code, paper, or report for methods and reported results.
+4. Treat any illustrative inputs and browser-generated values as demonstrations, not new experimental findings.
+
+### Authorship and maintenance
+
+This portfolio brings together Aaryan Samanta's research and engineering projects. Project-specific collaborators and external sources are credited where applicable.
+
+---
+
 ## ✨ What this is
 
 One fast static page that makes a record easy to check. Every number is specific, linked to a public source where one exists, and unfinished work is marked with a hollow dot instead of being dressed up as a result.

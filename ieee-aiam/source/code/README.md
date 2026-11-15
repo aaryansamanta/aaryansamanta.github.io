@@ -30,7 +30,6 @@ Choose a new or empty output directory. Select `--encoder gat` for graph attenti
 | [aiam_gnn/cli.py](aiam_gnn/cli.py) | Input validation, data splitting, baselines and evaluation |
 | [experiment.ipynb](experiment.ipynb) | Interactive experiment and results inspection |
 | [tests/](tests/) | Regression and end-to-end tests using temporary inputs |
-| [../.github/workflows/tests.yml](../.github/workflows/tests.yml) | Test workflow for pushes and pull requests |
 
 To run the notebook, install the notebook extra with `python -m pip install ".[notebook]"`, launch `jupyter lab experiment.ipynb`, and set the input paths in its first code cell. To run the tests:
 
