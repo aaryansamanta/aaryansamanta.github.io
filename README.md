@@ -29,7 +29,6 @@
 
 ## Interactive research demonstrations
 
-**[Open the interactive project directory](explore.html)** — a single starting point for the project demonstrations. Each project has its own page, technical context and supporting material. The pages use browser-side visualizations and should not be interpreted as live inference unless a project explicitly implements that behavior.
 
 The project pages are deliberately different: they reflect different research questions and prototypes rather than imposing a single generic dashboard. The shared navigation makes it easy to return to the portfolio or compare projects without changing their core experiments.
 

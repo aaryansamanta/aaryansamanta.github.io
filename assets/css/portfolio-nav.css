@@ -1,8 +1,0 @@
-/* Portfolio navigation: deliberately isolated from each project’s existing design. */
-.as-portfolio-bar{position:relative;z-index:1000;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:9px clamp(14px,3vw,36px);background:#0b1730;color:#eef6ff;font:500 13px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;border-bottom:1px solid #35516e}
-.as-portfolio-bar a{color:#c2f3f5;text-decoration:none;border-radius:5px;padding:5px 7px}
-.as-portfolio-bar a:hover,.as-portfolio-bar a:focus-visible{background:#203b56;color:white;outline:2px solid #5eead4;outline-offset:2px}
-.as-portfolio-bar strong{color:white;font-weight:650}
-.as-portfolio-bar .as-links{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
-@media(max-width:600px){.as-portfolio-bar{font-size:12px}.as-portfolio-bar strong{width:100%}}
-@media print{.as-portfolio-bar{display:none!important}}
