@@ -1,25 +1,15 @@
 # Pelvic Floor Motion Lab — Stanford-mentored research (2026)
 
-Static GitHub Pages research companion with a compact Stanford-cardinal-inspired interface.
+Interactive research portfolio by Aaryan Samanta. Open `index.html`, or upload the folder contents to a GitHub Pages repository. No backend or build step.
 
-## Run
-Open `index.html`, or upload this folder’s contents to the repository root / `docs` and enable GitHub Pages. No backend, dependencies, or dataset download.
+## What is on the page
+- Original annotated ultrasound and pressure animations from the research repository.
+- Browser motion lab: illustrative displacement traces with numerically computed velocity and acceleration.
+- **Clinical considerations** chapter: stress incontinence, The Knack, Valsalva and support, translation to evidence, and a six-point checklist.
+- **Sagittal landmark model**: anatomy-based schematic with the pubic symphysis as reference, a time scrubber, landmark trail, displacement vector with x/y components, live evaluation of r(t), Δr, v and a, and typeset equations (MathML).
+- **Measured data**: displacement, velocity and acceleration figure from the project presentation.
 
-## Source fidelity and scope
-The provided ZIP describes perineal ultrasound imaging under voluntary contraction (The Knack), cough, and Valsalva. The supplied summary reports 23 subjects, mean age 31.1 ± 13.6 years, and a 5.5 MHz probe. The browser lab generates **synthetic illustrative displacement curves** and computes numerical first and second derivatives. It does **not** reproduce measurements from the original project, infer anatomy from images, train an ML model, or make medical claims. No computational code or measurement tables were supplied.
+## Scope and rights
+The schematic and browser traces are explanatory, not participant measurements or clinical findings. The measured figure is reproduced from the project presentation; add its trace legend before publishing. The GIFs show mentor-owned clinical imaging: obtain Dr. Constantinou's permission before deploying publicly. This is not an official Stanford site or a diagnostic tool. Verify the presentation's "Body Mass: 22.4 ± 1.9 kg" entry against source records before citing it.
 
-The research presentation PDF is included for context. Original imaging videos and photos are excluded because public sharing permission was not established. Verify rights for the included presentation before publishing. This is an AI-assisted demonstration companion, not a student-authored original analysis or an official Stanford site.
-
-## Repository-inspired visual theme
-The site incorporates the animated `assets/banner.svg` supplied in the project repository, with its indigo/violet gradient, moving cyan scan beam, and animated waveform. The header stays compact so the browser lab appears near the top. Clinical GIFs are **not** bundled because the source README says permission is required to redistribute mentor-owned clinical imagery.
-
-## See it in action — original animations
-
-The top of the page now includes three original annotated ultrasound GIFs (The Knack, Valsalva, cough), and a collapsible section with three pressure visualization GIFs, copied from the supplied `stanford-urology-2026` repository. These are separate from the illustrative JavaScript-generated motion traces.
-
-**Permission:** The source README states the imaging belongs to Dr. Constantinou and no license is granted for redistribution. This package includes the GIFs for local review at the user’s request. **Obtain the mentor/rightsholder’s permission before publicly deploying this version.** If permission is not granted, remove `assets/gifs/` and the gallery from `index.html`, or replace with authorized media.
-
-## Original research repository
-
-The compact header, introduction and sources section link to the original project:
-https://github.com/aaryansamanta/ai-research-publications/tree/main/stanford-urology-2026
+Source repository: https://github.com/aaryansamanta/ai-research-publications/tree/main/stanford-urology-2026
