@@ -105,3 +105,35 @@ footer{background:#0f172a}
 .realfig{margin:18px 0 0;background:#f5f6ff;border:1px solid #e1e4f5;border-radius:13px;padding:23px}.realfig h3{font:normal 22px Georgia,serif;color:#20274c;margin:6px 0 12px}.realfig img{display:block;width:100%;height:auto;border-radius:9px;background:#fff}.realfig figcaption{font-size:11px;line-height:1.7;color:#5b6681;margin-top:11px}
 @media(max-width:800px){.cpanel,.cgrid,.readout{grid-template-columns:1fr}}
 .anatomy-panel{align-self:start;position:sticky;top:76px}@media(max-width:800px){.anatomy-panel{position:static}}
+
+/* Mentor feedback: prominent deterministic kinematics and controlled clip review */
+.kin-feature{margin:20px 0;padding:clamp(18px,3vw,36px);border:2px solid #6252bd;border-radius:20px;background:#fff;box-shadow:0 12px 38px #312e8118;scroll-margin-top:90px}.kin-head{border-bottom:1px solid #e0e4f5;padding-bottom:18px}.kin-head h2{font:normal clamp(25px,3vw,36px) Georgia,serif;color:#20274c;margin:8px 0}.kin-head p,.kin-method p,.kin-visual p{font-size:14px;line-height:1.65;color:#4f6072}.kin-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:22px;margin:20px 0}.kin-visual svg{width:100%;height:auto;display:block}.kin-equations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.kin-equations article{background:#f5f5ff;border:1px solid #dce0f4;border-radius:12px;padding:15px}.kin-equations small{font-size:10px;font-weight:800;letter-spacing:.09em;color:#51449b}.formula{font-family:Georgia,serif;font-size:clamp(17px,2vw,24px);color:#312e81;margin:12px 0;overflow-wrap:anywhere}.kin-equations p{font-size:12px;line-height:1.5;color:#4f6072}.kin-method{border-top:1px solid #dce0f4;padding-top:12px}.kin-link{font-weight:700;color:#51449b}.review-panel{margin:18px 0;padding:18px;border:1px solid #dce0f4;border-radius:14px;background:#f5f7ff;scroll-margin-top:90px}.review-panel h3{margin:6px 0;color:#20274c;font-size:20px}.review-panel p{font-size:13px;line-height:1.6;color:#4f6072}.review-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:center}.review-layout img{width:100%;max-height:380px;object-fit:contain;background:#10172f;border-radius:10px}.review-layout label{display:block;font-weight:700;font-size:12px;margin:10px 0 5px}.review-layout select{width:100%;padding:9px;border:1px solid #cbd4de;border-radius:7px;background:white}.review-layout input{width:100%;accent-color:#6252bd}.review-layout output{display:block;font-size:12px;font-variant-numeric:tabular-nums}.review-buttons{display:flex;gap:7px;margin:12px 0;flex-wrap:wrap}.review-buttons button,.review-open{padding:8px 12px;font-size:12px}.review-buttons button:disabled{opacity:.45;cursor:not-allowed}.clip-status{font-weight:600}.review-open{align-self:flex-start;margin-top:6px}.top{height:auto;min-height:62px;flex-wrap:wrap;padding-block:8px}.toplinks a{display:inline-block}.toplinks{gap:12px}#measured-results{padding:28px 24px;margin:20px 0;border-radius:16px;border:1px solid #dce0f4}#measured-results .realfig{margin:15px 0 0} @media(max-width:760px){.kin-body,.review-layout{grid-template-columns:1fr}.toplinks{gap:8px}.toplinks a{font-size:11px}.kin-equations article{padding:10px}} @media(max-width:380px){.kin-equations{grid-template-columns:1fr}}
+
+/* Compact desktop opening: preserve content and image proportions. */
+@media (min-width: 900px) {
+ .top {min-height:50px;padding-block:5px;}
+ .intro {padding:8px 0 9px;align-items:center;}
+ .introtext {padding:0;}
+ .intro h1 {margin:1px 0;line-height:1.12;}
+ .heroart {height:100px;}
+ .repo-cta {margin-top:6px;padding:6px 12px;}
+ .action-gallery {padding:12px 16px;margin-bottom:9px;}
+ .gallery-heading {margin-bottom:7px;}
+ .gallery-heading h2 {margin:0;line-height:1.15;}
+ .gallery-heading p {line-height:1.4;}
+ .gif-grid {gap:10px;}
+ .gif-frame {aspect-ratio:auto;height:clamp(115px,18vh,175px);}
+ .gif-card figcaption {padding:6px 10px;gap:1px;line-height:1.4;}
+ .review-open {margin-top:3px;padding:5px 10px;}
+ .gallery-caution {margin:6px 2px;line-height:1.4;}
+ .pressure-more {padding-top:5px;margin-top:5px;}
+ .kin-feature {margin:9px 0 15px;padding:18px 22px;}
+ .kin-head {padding-bottom:8px;}
+ .kin-head h2 {margin:3px 0;line-height:1.15;}
+ .kin-head p {margin:5px 0;line-height:1.5;}
+ .kin-body {margin:10px 0;gap:15px;}
+ .kin-equations {gap:8px;}
+ .kin-equations article {padding:10px;}
+ .formula {margin:6px 0;}
+ .kin-equations p {margin:4px 0;}
+}

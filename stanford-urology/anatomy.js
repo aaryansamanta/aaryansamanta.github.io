@@ -7,7 +7,7 @@ const txt={knack:'Voluntary contraction: the landmark moves cranially and anteri
 let D,play=0,raf=0;
 const f=(v,d)=>(v>=0?'+':'−')+Math.abs(v).toFixed(d);
 function build(){const mode=$('d-mode').value,L=LM[$('d-lm').value];
- const s=Array.from({length:n},(_,i)=>trace(i*dt,mode,1,1)),x=s.map(v=>L.K*L.u[0]*v),y=s.map(v=>L.K*L.u[1]*v),vx=derivative(x,dt),vy=derivative(y,dt);
+ const s=Array.from({length:n},(_,i)=>trace(i*dt,mode,1,1)-trace(0,mode,1,1)),x=s.map(v=>L.K*L.u[0]*v),y=s.map(v=>L.K*L.u[1]*v),vx=derivative(x,dt),vy=derivative(y,dt);
  D={L,x,y,vx,vy,ax:derivative(vx,dt),ay:derivative(vy,dt)};
  const P=i=>[L.b[0]-D.x[i]*NS,L.b[1]-D.y[i]*NS];
  D.P=P;$('trail').setAttribute('d',D.x.map((_,i)=>(i?'L':'M')+P(i).map(q=>q.toFixed(1)).join(' ')).join(''));

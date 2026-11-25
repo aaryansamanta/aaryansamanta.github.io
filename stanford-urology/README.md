@@ -13,3 +13,10 @@ Interactive research portfolio by Aaryan Samanta. Open `index.html`, or upload t
 The schematic and browser traces are explanatory, not participant measurements or clinical findings. The measured figure is reproduced from the project presentation; add its trace legend before publishing. The GIFs show mentor-owned clinical imaging: obtain Dr. Constantinou's permission before deploying publicly. This is not an official Stanford site or a diagnostic tool. Verify the presentation's "Body Mass: 22.4 ± 1.9 kg" entry against source records before citing it.
 
 Source repository: https://github.com/aaryansamanta/ai-research-publications/tree/main/stanford-urology-2026
+
+## November 25 mentor-feedback revision (private review)
+- Prominent deterministic kinematics feature and navigation, coordinate convention, calibration and finite differences.
+- Controlled frame explorer using only frames extracted from the existing GIFs; GIF timing is not acquisition timing. No original MP4s added, and full original acquisition videos are not confirmed.
+- Reported experimental figure separated from simulation; provenance and trace legend still require mentor confirmation.
+- Corrected simulated displacement baseline to zero.
+- Review locally before deployment. All existing media and derived review frames require mentor permission before public redistribution. No live website was changed.
